@@ -21,31 +21,28 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 {
 
-        va_list nums;
+	va_list nums;
 
-        unsigned int index;
+	unsigned int index;
 
-
-        va_start(nums, n);
-
-
-        for (index = 0; index < n; index++)
-
-        {
-
-                printf("%d", va_arg(nums, int));
+	va_start(nums, n);
 
 
-                if (index != (n - 1) && separator != NULL)
+	for (index = 0; index < n; index++)
 
-                        printf("%s", separator);
+	{
+	printf("%d", va_arg(nums, int));
 
-        }
+	if (index != (n - 1) && separator != NULL)
+
+	printf("%s", separator);
+
+	}
 
 
-        printf("\n");
+	printf("\n");
 
 
-        va_end(nums);
+	va_end(nums);
 
 }
