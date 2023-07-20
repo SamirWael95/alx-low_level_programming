@@ -26,7 +26,7 @@ va_list list;
 va_start(list, format);
 
 
-        if (format)
+if (format)
 	{
 	while (format[i])
 
@@ -41,7 +41,7 @@ va_start(list, format);
 
 		case 'i':
 
- 		printf("%s%d", sep, va_arg(list, int));
+	printf("%s%d", sep, va_arg(list, int));
 
 		break;
 
@@ -64,7 +64,7 @@ va_start(list, format);
 
 			default:
 
-			i++;	
+		i++;
 			continue;
 
 	}
